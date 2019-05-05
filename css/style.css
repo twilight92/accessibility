@@ -1,0 +1,27 @@
+@charset 'utf-8';
+
+body,input,button,select{font-family:'Montserrat','Nanum Square','Noto Sans KR',dotum,snas-serif;font-weight:400;letter-spacing:-0.03em;word-break:keep-all;color:#333}
+button{border:none}
+#wrap{width:1200px;margin:100px auto 150px auto}
+#wrap h1{margin-bottom: 20px;	text-align:center;font-size:30px;font-weight:bold}
+#wrap .btn_wrap { text-align: 	center }
+#wrap .btn_wrap a { display: inline-block;	padding: 7px 13px;	border-radius: 	5px 	;font-size: 15px; color: #fff; background-color: #333; }
+.guide section{margin-top:35px;font-size:14px}
+.guide h1{margin:0;padding:1em;background:#ecedef;text-shadow:1px 1px 1px rgba(255,255,255,.8)}
+.guide h1 .btn_special{float:right}
+.guide h2{width:100%;margin:0 0 25px;padding:25px 0 0;font-size:20px;color:#333;border-top:1px dashed #d0d0d0;font-weight:bold}
+.guide h2.tophead{padding-top:10px;border-top:0}
+.guide h3{position:relative;margin:25px 0 10px;padding:0 0 0 15px;font-size:14px}
+.guide h3:before{content:'';display:block;width:5px;height:5px;border-radius:50%;background-color:#333;position:absolute;top:5px;left:3px}
+.guide dl{position:relative;width:100%;margin-bottom:10px;border:0;border:solid 1px #ccc;border-width:0 1px 1px;background:#FF483B}
+.guide dt,.guide dd{border:0;border-top:1px solid #ccc}
+.guide dt{position:absolute;left:0;width:100px;padding:16px;text-align:left;font-weight:bold;color:#fff}
+.guide dd{margin-left:120px;padding:10px;border-left:1px solid #ccc;background:#fff;word-wrap:break-word;font-size:14px;line-height:26px}
+.guide dd ol{margin:0 0 7px 20px;list-style:decimal}
+.guide dd ul{margin:0 0 7px 20px;list-style:disc}
+.guide dd a{text-decoration:underline}
+.guide table{border-collapse:collapse}
+.guide th,.guide td{border:solid 1px #ccc}
+.guide th{background:#f7f7f7;padding:10px}
+.guide td{padding:10px}
+.guide img{max-width:99%;border:1px solid #eee}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="kr">
+	<head>
+		<meta charset="UTF-8" />
+		<title>인터파크 웹접근성 오류유형</title>
+		<meta name="robots" content="noindex" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/jquery-1.9.1.min.js"></script>
+	</head>
+
+	<body>
+		<div id="wrap">
+			<h1>인터파크 웹접근성 오류유형</h1>
+			<div class="btn_wrap">
+				<a href="#focus">포커스</a>
+				<a href="#auto_contents">자동 갱신 컨텐츠의 제어</a>
+				<a href="#link">적절한 링크 텍스트</a>
+				<a href="#alt_text">이미지 대체텍스트</a>
+			</div>
+			<article class="guide">
+				<section id="focus">
+					<h2>포커스</h2>
+					<h3>레이어가 나타난 상태에서의 포커스 순서가 논리적이지 않은 경우</h3>
+					<dl>
+						<dt>오류 예시</dt>
+						<dd>전체 카테고리메뉴 레이어가 나타난 상태에서의 포커스 순서가 '전체카테고리 열기 아이콘 → 뮤지컬 → 콘서트 → 연극 → ...' 순으로 구성되어 논리적이지 않음</dd><dt>참고 이미지</dt>
+						<dd><img src="./images/focus_01.jpg" alt=""></dd><dt>해결 방법</dt>
+						<dd>
+							<p>'전체카테고리 열기 아이콘 → 오리지널/내한공연 → 라이선스 → 창작뮤지컬 → ...'순으로 구성되도록 수정되어야 함</p>
+						</dd>
+					</dl>
+				</section>
+				<section id="auto_contents">
+					<h2>자동으로 갱신되는 콘텐츠의 제어</h2>
+					<h3>키보드 포커스 시 정지되지 않는 경우</h3>
+					<dl>
+						<dt>오류 예시</dt>
+						<dd>키보드 포커스시 롤링되는 콘텐츠 내용이 지속적으로 정지 해있지 않음.</dd><dt>참고 이미지</dt>
+						<dd><img src="./images/focus_02.jpg" alt=""></dd><dt>해결 방법</dt>
+						<dd>
+							<p>키보드 포커스 시 정지 또는 정지 버튼 제공</p>
+						</dd>
+					</dl>
+				</section>
+				<section id="link_text">
+					<h2>적절한 링크 텍스트</h2>
+					<h3>목적이나 용도를 알기 어려운 링크 텍스트를 제공한 경우</h3>
+					<dl>
+						<dt>오류 예시</dt>
+						<dd>쎈DEAL 더보기를 그냥 '더보기'로만 제공하여 링크 텍스트가 단독으로 사용될 때 정확한 의미 파악이 불가능하다.</dd><dt>참고 이미지</dt>
+						<dd><img src="./images/link_01.jpg" alt=""></dd><dt>해결 방법</dt>
+						<dd>
+							<p>'쎈DEAL 더보기'란 텍스트를 제공해야함. '쎈DEAL'을 숨김텍스트로 제공해주거나 title로 전체 링크 텍스트를 제공해야한다. 단, title 속성은 보조 도구의 설정에 따라 사용자에게 전달되지 못하는 경우도 발생할 수 있으므로 숨김 텍스트로 제공하는 것을 권장함.</p>
+						</dd>
+					</dl>
+				</section>
+				<section id="alt_text">
+					<h2>이미지 대체텍스트</h2>
+					<h3>하나의 링크내에 설명문구와 이미지의 대체 텍스트를 중복해서 제공한 경우</h3>
+					<dl>
+						<dt>오류 예시</dt>
+						<dd>"★무료배송★ 로지텍코리아 K480 멀티 블루투스 키보드 (블랙/화이트)"라는 항목 이미지의 대체 텍스트가 함께 제공된 텍스트와 중복됨.</dd><dt>참고 이미지</dt>
+						<dd><img src="./images/alt_01.jpg" alt=""></dd><dt>해결 방법</dt>
+						<dd>
+							<p>하나의 링크내에 설명문구와 이미지의 대체 텍스트를 중복 제공한 경우 이미지의 alt값을 빈값(alt="")으로 제공해야 함.<br>하단에 제공된 사례와 같이 이미지와 텍스트에 각각의 링크가 걸려있는 경우, 링크가 이미지와 텍스트를 한꺼번에 감싸도록 수정하는 것이 바람직함.</p>
+						</dd>
+					</dl>
+					<h3>이미지의 내용중 일부만 대체 텍스트로 제공한 경우</h3>
+					<dl>
+						<dt>오류 예시</dt>
+						<dd>이미지의 내용중 일부만 대체 텍스트로 제공한 경우</dd><dt>참고 이미지</dt>
+						<dd><img src="./images/alt_02.jpg" alt=""></dd><dt>해결 방법</dt>
+						<dd>
+							<p>이미지의 모든 내용을 대체 텍스트로 제공해야 함.</p>
+						</dd>
+					</dl>
+				</section>
+				
+			</article>
+		</div>
+		
+	</body>
+</html>
